@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
-            $table->morps('billable');
+            $table->morphs('billable');
             $table->string('type');
             $table->string('paddle_id')->unique();
             $table->string('status');
