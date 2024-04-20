@@ -23,8 +23,6 @@ return new class extends Migration
             $table->string('currency', 3);
             $table->timestamp('billed_at');
             $table->timestamps();
-
-            $table->index(['billable_id', 'billable_type']);
         });
     }
 
