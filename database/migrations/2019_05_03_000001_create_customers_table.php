@@ -19,8 +19,6 @@ return new class extends Migration
             $table->string('email');
             $table->timestamp('trial_ends_at')->nullable();
             $table->timestamps();
-
-            $table->index(['billable_id', 'billable_type']);
         });
     }
 
